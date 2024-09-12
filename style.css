@@ -1,17 +1,25 @@
+
+@font-face {
+        font-family: "Rows of Sunflowers";
+        src: url("G-emmaLee\Assets\rows_of_sunflowers.zip");
+}
+
 body {
-    font-family: Helvetica, Arial, sans-serif;
-    margin: 0px;
+    font-family: "Rows of Sunflowers", Helvetica, Arial, sans-serif;
+    margin: 0;
     font-size: 1.5vw;
+    color: black;
+    background-color: #FFF4EA;
 }
 
 #logo {
     margin: 0px;
-    padding: 8px;
+    padding: 10px;
     font-family: "Fredoka One", sans-serif;
-    color: white;
-    /* box-shadow: 8px 8px 10px 3px darkorange; */
-    width: 16%;
-    
+    color: #FFF4EA;
+    box-shadow: 8px 8px 10px 3px #c55959;
+    width: 18%;
+    border-radius: 20%;
 }
 
 ul {
@@ -19,18 +27,42 @@ ul {
 }
 
 body > header {
-    background-color: orange;
+    background-color: #C96868;
     /* color: rgb(255, 255, 255); */
     /* color: #fff; */
     display: flex;
-    height: 12vh;
+    height: 14vh;
+    justify-content: center;
     align-items: center;
     justify-content: space-around;
 }
 
+main > header {
+    display: flex;
+    justify-content: space-between;
+    height: 30vh;
+    margin-left: 9vh;   
+    margin-top: 4vh;
+    text-align: center;
+}
+
+main > header > div {
+    flex-direction: column;
+    margin-right: 95vh;
+}
+
+img {
+    border-radius: 10%;
+    top: 0;
+    left: 0;
+    width: 30%;
+    height: 100%;
+}
+
 #nav-ul {
     display: flex;
-
+    list-style: none;
+    text-decoration: none;
 }
 
 #nav-ul > li {
@@ -38,61 +70,81 @@ body > header {
     margin: 8px;
 }
 
-body > header > nav > ul {
-    list-style: none;
-    text-decoration: none;
-    /* display: flex; */
-}
-
 .navbutton {
-    color: white;
+    color: #FFF4EA;
     text-decoration: none;
     padding: 12px;
-    border: 1px solid white;
+    border: 1px solid #FFF4EA;
     border-radius: 10%;
 }
 
-body > main article {
-    width: 80%;
-    margin: auto;
-}
-
-#main-content {
+#main-body {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
-#main-content > div {
-    width: 70%;
+#ingredients {
+    flex: 1 1 calc(20% - 20vh);
+    padding: 10px;              
+    text-align: center;         
+}
+
+#methods {
+    margin: 0;
+    flex: 1 1 calc(50% - 20vh);
+    padding: 10px;             
+}
+
+h2 {
+    text-align: center;
 }
 
 form {
     text-align: center;
 }
 
-h2 {
-    text-align: center;
-    }
+#suggestions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-figure {
+    margin: 0;
+    flex-direction: column;
+}
+
+.suggestbutton {             
+    text-decoration: none;            
+    color: black;         
+    padding-top: 22vh;   
+    padding-right: 18vh;
+  }
+
+figure > img {
+    border-radius: 10%;
+    margin: 1vh;
+    width: 22vh;
+    height: 20vh;
+}
 
 body > footer {
-    background-color: orange;
+    background-color: #C96868;
     display: flex;
 }
 
-#footer-ul {
-    display: flex;
+footer > h2 {
+    color: #FFF4EA;
+    margin-left: 20px;
+}
+
+#footer-ul > div {
     list-style: none;
+    color: #FFF4EA;
+    display: flex;      
 }
 
-#footer-ul > div > li {
-    margin-left: 12px;
-}
-
-#footer-ul > div > li > a {
-    color: white;
+#footer-ul > div > li  > a {
+    margin-left: 7vh;
     text-decoration: none;
-}
-
-img {
-    border-radius: 50%;
+    color: #FFF4EA;   
 }
